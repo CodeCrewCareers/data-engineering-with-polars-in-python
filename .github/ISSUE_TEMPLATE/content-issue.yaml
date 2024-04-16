@@ -32,6 +32,6 @@ body:
     id: describe
     attributes:
       label: Description
-      description: Tell us the problem!
+      description: Provide us with some context (you can add screenshots here)
     validations:
       required: true
