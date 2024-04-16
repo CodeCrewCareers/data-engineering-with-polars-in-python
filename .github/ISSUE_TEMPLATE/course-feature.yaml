@@ -1,0 +1,32 @@
+name: Request Course Feature
+description: Request new course content.
+labels: [enchancement]
+projects: []
+assignees:
+  - jrasband-dev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank your for requesting new course content! 
+        
+  - type: input
+    id: lecture-topic
+    attributes:
+      label: Lecture Topic
+      description: What's the topic?'
+
+  - type: textarea
+    id: url
+    attributes:
+      label: URL
+      description: Please share any links for reference
+  
+  
+  - type: textarea
+    id: describe
+    attributes:
+      label: Description
+      description: Tell us what you want to see!
+    validations:
+      required: true
