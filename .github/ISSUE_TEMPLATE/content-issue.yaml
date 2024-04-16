@@ -1,0 +1,37 @@
+name: Report a Content Issue
+description: Report an issue with the course content.
+labels: [bug]
+projects: []
+assignees:
+  - jrasband-dev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank your for reporting this issue! 
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Issue Type
+      options:
+        - label: Audio
+        - label: Video
+        - label: Closed Captions
+        - label: Inaccuracy
+        - label: Outdated Content
+        - label: Other
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Please share a link to the content.
+  
+  - type: textarea
+    id: describe
+    attributes:
+      label: Description
+      description: Tell us the problem!
+    validations:
+      required: true
